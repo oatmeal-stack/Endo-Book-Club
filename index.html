@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Book — Endo Center Book Club</title>
+<style>
+  :root {
+    --paper: #faf6ef;
+    --accent: #2f7a6f;
+    --accent-dark: #235a52;
+    --text: #2b2621;
+    --muted: #7a6f63;
+    --border: #e3d9c8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--text);
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px 20px 60px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav a.active {
+    color: var(--accent-dark);
+    font-weight: bold;
+  }
+  .club-name {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  h1.label {
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .cover {
+    display: block;
+    width: 220px;
+    margin: 0 auto 28px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border: 1px solid var(--border);
+  }
+  .title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+  .author {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    text-align: center;
+    margin: 0 0 28px;
+  }
+  .meta {
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  .meta strong {
+    color: var(--text);
+  }
+  .cta {
+    display: block;
+    text-align: center;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 6px;
+    letter-spacing: 0.02em;
+  }
+  .cta:hover {
+    background: var(--accent-dark);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html" class="active">Next Book</a>
+    <a href="proposed.html">Proposed</a>
+    <a href="previous.html">Previously Read</a>
+  </nav>
+
+  <div class="club-name">Endo Center Book Club</div>
+  <h1 class="label">Reading Next</h1>
+
+  <img class="cover" src="https://covers.openlibrary.org/b/id/13268557-L.jpg" alt="Remarkably Bright Creatures cover">
+
+  <div class="title">Remarkably Bright Creatures</div>
+  <div class="author">Shelby Van Pelt</div>
+
+  <div class="meta">We're discussing this one as we go along — <strong>no set date yet</strong>.</div>
+
+  <a class="cta" href="https://www.amazon.com/dp/0063204169" target="_blank" rel="noopener">Buy on Amazon</a>
+</div>
+</body>
+</html>

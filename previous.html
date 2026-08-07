@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Previously Read — Endo Center Book Club</title>
+<style>
+  :root {
+    --paper: #faf6ef;
+    --accent: #2f7a6f;
+    --accent-dark: #235a52;
+    --text: #2b2621;
+    --muted: #7a6f63;
+    --border: #e3d9c8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--text);
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px 20px 60px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav a.active {
+    color: var(--accent-dark);
+    font-weight: bold;
+  }
+  .club-name {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  h1.label {
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    margin: 0 0 28px;
+  }
+  .entry {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+  }
+  .entry img {
+    width: 56px;
+    height: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .entry-title {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    margin: 0 0 2px;
+    line-height: 1.25;
+  }
+  .entry-author {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 4px;
+  }
+  .entry-date {
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 6px;
+  }
+  .entry a.view {
+    font-size: 13px;
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html">Next Book</a>
+    <a href="proposed.html">Proposed</a>
+    <a href="previous.html" class="active">Previously Read</a>
+  </nav>
+
+  <div class="club-name">Endo Center Book Club</div>
+  <h1 class="label">Previously Read</h1>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/14840090-M.jpg" alt="Water Moon cover">
+    <div>
+      <div class="entry-title">Water Moon</div>
+      <div class="entry-author">Samantha Sotto Yambao</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/0593724992" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/8779479-M.jpg" alt="The Nightingale cover">
+    <div>
+      <div class="entry-title">The Nightingale</div>
+      <div class="entry-author">Kristin Hannah</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/1250080401" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/14847912-M.jpg" alt="Sunrise on the Reaping cover">
+    <div>
+      <div class="entry-title">Sunrise on the Reaping</div>
+      <div class="entry-author">Suzanne Collins</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/1546171460" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/15123629-M.jpg" alt="The God of the Woods cover">
+    <div>
+      <div class="entry-title">The God of the Woods</div>
+      <div class="entry-author">Liz Moore</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/0593418913" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/7280778-M.jpg" alt="Shutter Island cover">
+    <div>
+      <div class="entry-title">Shutter Island</div>
+      <div class="entry-author">Dennis Lehane</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/0061703257" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/13190576-M.jpg" alt="Just One Damned Thing After Another cover">
+    <div>
+      <div class="entry-title">Just One Damned Thing After Another</div>
+      <div class="entry-author">Jodi Taylor</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/1472264266" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/10207033-M.jpg" alt="The House in the Cerulean Sea cover">
+    <div>
+      <div class="entry-title">The House in the Cerulean Sea</div>
+      <div class="entry-author">TJ Klune</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/1250217318" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
