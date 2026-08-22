@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Next Book — Endo Center Book Club</title>
+<title>Previously Cooked — Endo Center Cookbook Club</title>
 <style>
   :root {
     --paper: #faf6ef;
@@ -36,7 +36,7 @@
     row-gap: 6px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     font-size: 15px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -76,81 +76,82 @@
     font-size: 17px;
     color: var(--muted);
     text-align: center;
-    margin: 0 0 22px;
+    margin: 0 0 28px;
   }
-  .cover {
-    display: block;
-    width: 70%;
-    max-width: 280px;
-    min-width: 180px;
-    margin: 0 auto 28px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  .entry {
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+  }
+  .entry img {
+    width: 110px;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     border: 1px solid var(--border);
+    flex-shrink: 0;
   }
-  .title {
+  .entry-title {
     font-family: Georgia, serif;
-    font-size: clamp(32px, 10vw, 42px);
-    text-align: center;
-    margin: 0 0 12px;
-    line-height: 1.15;
-    padding: 0 8px;
+    font-size: 26px;
+    margin: 0 0 4px;
+    line-height: 1.2;
   }
-  .author {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    color: var(--muted);
-    text-align: center;
-    margin: 0 0 30px;
-  }
-  .meta {
-    text-align: center;
+  .entry-author {
     font-size: 18px;
     color: var(--muted);
-    margin-bottom: 32px;
-    line-height: 1.6;
+    margin: 0 0 4px;
   }
-  .meta strong {
-    color: var(--text);
+  .entry-date {
+    font-size: 15px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 8px;
   }
-  .cta {
-    display: block;
-    text-align: center;
-    background: var(--accent);
-    color: #fff;
+  .entry a.view {
+    display: inline-block;
+    font-size: 17px;
+    color: var(--accent-dark);
     text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    padding: 18px 20px;
-    border-radius: 8px;
-    letter-spacing: 0.02em;
-  }
-  .cta:active {
-    background: var(--accent-dark);
+    padding: 4px 0;
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <nav>
-    <a href="index.html" class="active">Next Book</a>
-    <a href="proposed.html">Proposed</a>
-    <a href="previous.html">Previously Read</a>
+    <a href="cookbook.html">Next Cookbook</a>
+    <a href="cookbook-proposed.html">Proposed</a>
+    <a href="cookbook-previous.html" class="active">Previously Cooked</a>
   </nav>
 
-  <div class="cross-link"><a href="cookbook.html">Cookbook Club &rarr;</a></div>
+  <div class="cross-link"><a href="index.html">&larr; Back to Book Club</a></div>
 
-  <div class="club-name">Endo Center Book Club</div>
-  <h1 class="label">Reading Next</h1>
+  <div class="club-name">Endo Center Cookbook Club</div>
+  <h1 class="label">Previously Cooked</h1>
 
-  <img class="cover" src="https://covers.openlibrary.org/b/id/13268557-L.jpg" alt="Remarkably Bright Creatures cover">
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/10471407-M.jpg" alt="Modern Comfort Food cover">
+    <div>
+      <div class="entry-title">Modern Comfort Food</div>
+      <div class="entry-author">Ina Garten</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/0804187061" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
 
-  <div class="title">Remarkably Bright Creatures</div>
-  <div class="author">Shelby Van Pelt</div>
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/12941575-M.jpg" alt="From Crook to Cook cover">
+    <div>
+      <div class="entry-title">From Crook to Cook</div>
+      <div class="entry-author">Snoop Dogg</div>
+      <div class="entry-date">Date read: —</div>
+      <a class="view" href="https://www.amazon.com/dp/1452179611" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
 
-  <div class="meta">We're discussing this one as we go along — <strong>no set date yet</strong>.</div>
-
-  <a class="cta" href="https://www.amazon.com/dp/0063204169" target="_blank" rel="noopener">Buy on Amazon</a>
 </div>
 </body>
 </html>
