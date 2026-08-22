@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Next Cookbook — Endo Center Cookbook Club</title>
+<title>Cookbook Club — Endo Center Book Club</title>
 <style>
   :root {
     --paper: #faf6ef;
@@ -31,34 +31,25 @@
   }
   nav {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 6px;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 4px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
-    margin-bottom: 12px;
-    font-size: 15px;
+    margin-bottom: 28px;
+    font-size: 13px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
   nav a {
     color: var(--muted);
     text-decoration: none;
-    padding: 8px 4px;
+    padding: 8px 2px;
   }
   nav a.active {
     color: var(--accent-dark);
     font-weight: bold;
-  }
-  .cross-link {
-    text-align: center;
-    margin-bottom: 26px;
-  }
-  .cross-link a {
-    font-size: 14px;
-    color: var(--muted);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--muted);
   }
   .club-name {
     font-family: Georgia, serif;
@@ -128,17 +119,72 @@
   .cta:active {
     background: var(--accent-dark);
   }
+  .cta.secondary {
+    background: transparent;
+    color: var(--accent-dark);
+    border: 2px solid var(--accent);
+    margin-top: 14px;
+  }
+  .archive-heading {
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    color: var(--muted);
+    text-align: center;
+    margin: 52px 0 6px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+  }
+  .entry {
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+  }
+  .entry img {
+    width: 110px;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .entry-title {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .entry-author {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 4px;
+  }
+  .entry-date {
+    font-size: 15px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 8px;
+  }
+  .entry a.view {
+    display: inline-block;
+    font-size: 17px;
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 0;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <nav>
-    <a href="cookbook.html" class="active">Next Cookbook</a>
-    <a href="cookbook-proposed.html">Proposed</a>
-    <a href="cookbook-previous.html">Previously Cooked</a>
+    <a href="index.html">Next Book</a>
+    <a href="proposed.html">Proposed</a>
+    <a href="previous.html">Previously Read</a>
+    <a href="cookbook.html" class="active">Cookbook Club</a>
   </nav>
-
-  <div class="cross-link"><a href="index.html">&larr; Back to Book Club</a></div>
 
   <div class="club-name">Endo Center Cookbook Club</div>
   <h1 class="label">Cooking Next</h1>
@@ -151,6 +197,50 @@
   <div class="meta">We're baking through this one as we go along — <strong>no set date yet</strong>.</div>
 
   <a class="cta" href="https://www.amazon.com/dp/1452180733" target="_blank" rel="noopener">Buy on Amazon</a>
+  <a class="cta secondary" href="mailto:joeshealy%2Bendobookclub@gmail.com?subject=Cookbook%20suggestion%20for%20the%20club">Suggest a Cookbook</a>
+
+  <h2 class="archive-heading">Cookbook Archive</h2>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/10471407-M.jpg" alt="Modern Comfort Food cover">
+    <div>
+      <div class="entry-title">Modern Comfort Food</div>
+      <div class="entry-author">Ina Garten</div>
+      <div class="entry-date">2020</div>
+      <a class="view" href="https://www.amazon.com/dp/0804187061" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/12941575-M.jpg" alt="From Crook to Cook cover">
+    <div>
+      <div class="entry-title">From Crook to Cook</div>
+      <div class="entry-author">Snoop Dogg</div>
+      <div class="entry-date">2018</div>
+      <a class="view" href="https://www.amazon.com/dp/1452179611" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/678582-M.jpg" alt="The King Arthur Flour Baker's Companion cover">
+    <div>
+      <div class="entry-title">The King Arthur Flour Baker's Companion</div>
+      <div class="entry-author">King Arthur Baking Company</div>
+      <div class="entry-date">2012</div>
+      <a class="view" href="https://www.amazon.com/dp/158157178X" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
+  <div class="entry">
+    <img src="https://covers.openlibrary.org/b/id/9769123-M.jpg" alt="Quick &amp; Easy Family Favorites cover">
+    <div>
+      <div class="entry-title">Quick &amp; Easy Family Favorites</div>
+      <div class="entry-author">Gooseberry Patch</div>
+      <div class="entry-date">2009</div>
+      <a class="view" href="https://www.amazon.com/dp/0848732995" target="_blank" rel="noopener">View on Amazon</a>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>

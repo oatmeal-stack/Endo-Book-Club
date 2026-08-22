@@ -31,34 +31,25 @@
   }
   nav {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 6px;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 4px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
     margin-bottom: 28px;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
   nav a {
     color: var(--muted);
     text-decoration: none;
-    padding: 8px 4px;
+    padding: 8px 2px;
   }
   nav a.active {
     color: var(--accent-dark);
     font-weight: bold;
-  }
-  .cross-link {
-    text-align: center;
-    margin-bottom: 26px;
-  }
-  .cross-link a {
-    font-size: 14px;
-    color: var(--muted);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--muted);
   }
   .club-name {
     font-family: Georgia, serif;
@@ -136,9 +127,8 @@
     <a href="index.html" class="active">Next Book</a>
     <a href="proposed.html">Proposed</a>
     <a href="previous.html">Previously Read</a>
+    <a href="cookbook.html">Cookbook Club</a>
   </nav>
-
-  <div class="cross-link"><a href="cookbook.html">Cookbook Club &rarr;</a></div>
 
   <div class="club-name">Endo Center Book Club</div>
   <h1 class="label">Reading Next</h1>
